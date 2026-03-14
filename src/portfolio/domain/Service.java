@@ -1,6 +1,8 @@
 package portfolio.domain;
 
-import java.util.Date;
+import portfolio.domain.vo.*;
+import shared.domain.vo.ImagesUrls;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -12,43 +14,17 @@ import java.util.UUID;
  * @date 3/13/26
  */
 public class Service {
-    private UUID id;
-    private String portfolioId;
-
+    private ServiceId id;
+    private PortfolioId portfolioId;
     private String title;
     private String description;
-    private Category category;
-    private List<String> tags; // Optional
+    private CategoryId categoryId;
     private String coverImageUrl;
-    private List<String> imageUrls; // Optional
-
+    
+    private Tags tags; // Optional
+    private ImagesUrls imageUrls; // Optional
     private Pricing pricing; // Optional
     private List<FAQ> faqs; // Optional
-    private Award award;
-    
-    // -------------------- Pricing --------------------
-    public static class Pricing {
-        private double basePrice;
-        private int deliveryDays;
-        private boolean isNegotiable;
-        private List<Extra> extras; // Optional
-
-        public static class Extra { // max = 3
-            private ExtraType type;
-            private String name;
-            private double price;
-            private String description;
-            
-            public enum  ExtraType {
-                Bronze, Silver, Gold
-            }
-        }
-    }
-    
-    // -------------------- FAQ --------------------
-    public static class FAQ {
-        private String question;
-        private String answer;
-    }
+    private Award award; // Optional
 }
 

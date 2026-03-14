@@ -1,6 +1,9 @@
 package user.domain;
 
 
+import user.domain.vo.Email;
+import user.domain.vo.UserId;
+
 import java.util.UUID;
 
 /**
@@ -11,8 +14,7 @@ import java.util.UUID;
  * @date 3/13/26
  */
 public class User {
-    private UUID id;
-    private String email;
-    private String username;
+    private UserId id;
+    private Email email;
     private String passwordHash;
 }

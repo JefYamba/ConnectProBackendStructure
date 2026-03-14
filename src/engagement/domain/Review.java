@@ -1,6 +1,10 @@
 package engagement.domain;
 
 
+import engagement.domain.vo.Rating;
+import portfolio.domain.vo.ServiceId;
+import user.domain.vo.UserId;
+
 import java.time.Instant;
 import java.util.UUID;
 
@@ -13,9 +17,9 @@ import java.util.UUID;
  */
 public class Review { // Non updatable
     private UUID id;
-    private UUID reviewerId;
-    private UUID serviceId;
-    private int rating;
+    private UserId reviewerId;
+    private ServiceId serviceId;
+    private Rating rating;
     private String comment;
     private Instant createdAt;
 }

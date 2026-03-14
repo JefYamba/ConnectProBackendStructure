@@ -1,5 +1,10 @@
 package portfolio.domain;
 
+import portfolio.domain.vo.*;
+import shared.domain.vo.JobType;
+import shared.domain.vo.PayPeriod;
+import shared.domain.vo.WorkMode;
+
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -14,44 +19,17 @@ import java.util.UUID;
  */
 public class JobPost {
 
-    private UUID id;
-    private UUID portfolioId;
+    private JobPostId id;
+    private PortfolioId portfolioId;
     private String title;
     private String description;
-    private Category category;
-    private List<String> tags; // Optional
+    private CategoryId categoryId;
+    private Tags tags; // Optional
     private Budget budget; // Optional
     private JobType jobType;
     private WorkMode workMode;
-    private List<String> requiredSpokenLanguages; // Optional
+    private Languages requiredSpokenLanguages; // Optional
     private Date deadline;
-
-    public enum WorkMode {
-        REMOTE,
-        ON_SITE,
-        HYBRID
-    }
     
-    public enum JobType {
-        FULL_TIME,
-        PART_TIME,
-        FREELANCE,
-        INTERNSHIP,
-    }
-
-    // -------------------- Budget --------------------
-    public static class Budget {
-        private BigDecimal amountFrom;
-        private BigDecimal amountTo;
-        private boolean isNegociable;
-        private PayPeriod payPeriod;
-        
-        public enum PayPeriod {
-            HOURLY,
-            DAILY,
-            WEEKLY,
-            MONTHLY
-        }
-    }
 }
 

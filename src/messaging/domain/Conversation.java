@@ -1,6 +1,9 @@
 package messaging.domain;
 
 
+import messaging.domain.vo.ConversationId;
+import user.domain.vo.UserId;
+
 import java.time.Instant;
 import java.util.UUID;
 
@@ -12,9 +15,9 @@ import java.util.UUID;
  * @date 3/13/26
  */
 public class Conversation {
-    private UUID id;
-    private UUID participantA;
-    private UUID participantB;
+    private ConversationId id;
+    private UserId participantA;
+    private UserId participantB;
     private Instant createdAt;
     private Instant lastModifiedAt;
 }

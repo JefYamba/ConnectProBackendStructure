@@ -1,0 +1,19 @@
+package shared.application.dtos;
+
+
+import shared.domain.vo.PayPeriod;
+
+/**
+ * @author Jôph Exauce Fouschard Yamba
+ * @version 1.0
+ * @email joph.e.f.yamba@gmail.com
+ * @github <a href="https://github.com/JefYamba">https://github.com/JefYamba</a>
+ * @date 3/14/26
+ */
+public class BudgetData {
+    private double amountFrom;
+    private double amountTo;
+    private boolean isNegociable;
+    private PayPeriod payPeriod;
+}
+

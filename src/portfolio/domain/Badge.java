@@ -1,6 +1,10 @@
 package portfolio.domain;
 
 
+import portfolio.domain.vo.HexColor;
+
+import java.awt.*;
+
 /**
  * @author Jôph Exauce Fouschard Yamba
  * @version 1.0
@@ -10,12 +14,9 @@ package portfolio.domain;
  */
 public class Badge {
     private Long id;
-
     private String name;       
-    private String description;
-
-    private String icon;        // icon name or url
-    private String color;       // hex color
+    private HexColor color;       // hex color
+    private String description;  // Optional
 }
 
 /*

@@ -1,5 +1,7 @@
 package portfolio.domain;
 
+import portfolio.domain.vo.CategoryId;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -11,8 +13,8 @@ import java.time.LocalDateTime;
  * @date 3/13/26
  */
 public class Category {
-    private Long id;
+    private CategoryId id;
     private String name;
-    private String description;
+    private String description;  // Optional
     private LocalDateTime createdAt;
 }

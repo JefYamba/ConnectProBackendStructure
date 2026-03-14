@@ -1,6 +1,8 @@
 package marketplace.domain;
 
 
+import shared.domain.vo.JobApplicationStatus;
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -17,11 +19,5 @@ public class JobApplication {
     private UUID jobPostId;
     private String motivation;
     private Date appliedAt;
-    private ApplicationStatus status;
-
-    public enum ApplicationStatus {
-        PENDING,
-        ACCEPTED,
-        REJECTED
-    }
+    private JobApplicationStatus status;
 }

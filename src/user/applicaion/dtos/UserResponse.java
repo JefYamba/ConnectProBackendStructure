@@ -11,10 +11,11 @@ import java.util.UUID;
  * @date 3/13/26
  */
 
-public class UserResponse {
-    private UUID id;
-    private String email;
-    private String username;
-    private String name;
-    private String imageUrl;
-}
+public record UserResponse (
+        UUID id,
+        String email,
+        String username,
+        String name,
+        String imageUrl
+) {}
+

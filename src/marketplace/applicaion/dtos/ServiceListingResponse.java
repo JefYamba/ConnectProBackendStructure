@@ -3,6 +3,7 @@ package marketplace.applicaion.dtos;
 
 import portfolio.domain.Badge;
 import portfolio.domain.Category;
+import shared.application.dtos.PortfolioSummaryResponse;
 
 import java.util.Date;
 import java.util.List;
@@ -15,35 +16,22 @@ import java.util.UUID;
  * @github <a href="https://github.com/JefYamba">https://github.com/JefYamba</a>
  * @date 3/13/26
  */
-public class ServiceResponse {
+public class ServiceListingResponse {
 
     private UUID id;
-    private UUID portfolioId;
-
+    private PortfolioSummaryResponse portfolio;
     private String title;
     private String description;
     private Category category;
     private List<String> tags;
     private String coverImageUrl;
-    private List<String> imageUrls;
 
     private Pricing pricing;
-    private List<FAQ> faqs;
     private Badge badges;
-    
     
     private double averageRating;
     private int numberOfReviews;
-    private List<Review> recentReviews; // max = 3
     
-
-    public static class Review {
-        private String reviewerName;
-        private double rating;
-        private String comment;
-        private Date date;
-    }
-
     // -------------------- Pricing --------------------
     public static class Pricing {
         private double basePrice;
@@ -56,11 +44,5 @@ public class ServiceResponse {
             private double price;
             private String description;
         }
-    }
-
-    // -------------------- FAQ --------------------
-    public static class FAQ {
-        private String question;
-        private String answer;
     }
 }

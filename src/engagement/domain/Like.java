@@ -1,6 +1,9 @@
 package engagement.domain;
 
 
+import portfolio.domain.vo.ServiceId;
+import user.domain.vo.UserId;
+
 import java.time.Instant;
 import java.util.UUID;
 
@@ -13,7 +16,7 @@ import java.util.UUID;
  */
 public class Like {
     private UUID id;
-    private UUID userId;
-    private UUID serviceId;
+    private UserId userId;
+    private ServiceId serviceId;
     private Instant createdAt;
 }
