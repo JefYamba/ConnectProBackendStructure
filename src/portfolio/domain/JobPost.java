@@ -19,11 +19,11 @@ public class JobPost {
     private String title;
     private String description;
     private Category category;
-    private List<String> tags;
-    private Budget budget;
+    private List<String> tags; // Optional
+    private Budget budget; // Optional
     private JobType jobType;
     private WorkMode workMode;
-    private List<String> requiredSpokenLanguages;
+    private List<String> requiredSpokenLanguages; // Optional
     private Date deadline;
 
     public enum WorkMode {

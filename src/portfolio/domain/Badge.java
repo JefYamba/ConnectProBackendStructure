@@ -19,7 +19,9 @@ public class Badge {
 }
 
 /*
- * Top Rated
- * Verified
- * Rising Talent
+    Verified
+    Top Rated
+    Pro Seller
+    Trusted
+    New Seller
  */

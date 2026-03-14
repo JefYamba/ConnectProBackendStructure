@@ -8,7 +8,7 @@ package portfolio.domain;
  * @github <a href="https://github.com/JefYamba">https://github.com/JefYamba</a>
  * @date 3/13/26
  */
-public class Award {
+public class Award { // 
     private Long id;
 
     private String name;       
@@ -17,3 +17,9 @@ public class Award {
     private String icon;        // icon name or url
     private String color;       // hex color
 }
+/*
+    Best Design 2025
+    Top Logo Design
+    Customer Favorite
+    Most Hired Service
+ */

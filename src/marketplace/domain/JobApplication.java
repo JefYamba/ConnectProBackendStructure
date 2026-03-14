@@ -15,7 +15,7 @@ public class JobApplication {
     private UUID id;
     private UUID applicantId;
     private UUID jobPostId;
-    private String message;
+    private String motivation;
     private Date appliedAt;
     private ApplicationStatus status;
 

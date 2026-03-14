@@ -18,20 +18,20 @@ public class Service {
     private String title;
     private String description;
     private Category category;
-    private List<String> tags;
+    private List<String> tags; // Optional
     private String coverImageUrl;
-    private List<String> imageUrls;
+    private List<String> imageUrls; // Optional
 
-    private Pricing pricing;
-    private List<FAQ> faqs;
-    private Badge badges;
+    private Pricing pricing; // Optional
+    private List<FAQ> faqs; // Optional
+    private Award award;
     
     // -------------------- Pricing --------------------
     public static class Pricing {
         private double basePrice;
         private int deliveryDays;
         private boolean isNegotiable;
-        private List<Extra> extras;
+        private List<Extra> extras; // Optional
 
         public static class Extra { // max = 3
             private ExtraType type;

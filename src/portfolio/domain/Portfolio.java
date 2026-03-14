@@ -22,10 +22,10 @@ public class Portfolio {
     private ProfessionalInfo professionalInfo;
     private ContactInfo contactInfo;
     private LocationInfo locationInfo;
-    private List<SocialLink> socialLinks;
+    private List<SocialLink> socialLinks; // Optional
 
-    private List<Service> services;
-    private List<JobPost> jobPosts;
+    private List<Service> services; // Optional
+    private List<JobPost> jobPosts;// Optional
     
     public enum PortfolioType {
         INDIVIDUAL,
@@ -36,10 +36,10 @@ public class Portfolio {
     public static class GeneralInfo {
         private String name;
         private String shortDescription;
-        private String longDescription;
+        private String longDescription; // Optional
         private String profilePhotoUrl;
-        private String coverImageUrl;
-        private List<String> spokenLanguages;
+        private String coverImageUrl; 
+        private List<String> spokenLanguages; // Optional
         private PortfolioStatus status;
 
         public enum PortfolioStatus {
@@ -51,10 +51,10 @@ public class Portfolio {
 
     // -------------------- Professional Information --------------------
     public static class ProfessionalInfo {
-        private int numberOfEmployees;
-        private int activeYears;
-        private List<PortfolioProjects> projects; // previous projects
-        private Award award;
+        private int numberOfEmployees; // Optional
+        private int activeYears; 
+        private List<PortfolioProjects> projects; // previous projects // Optional
+        private Badge badges;
         private Availability availability;
 
         public enum Availability {
@@ -75,8 +75,8 @@ public class Portfolio {
 
     public static class ContactInfo {
         private String email;
-        private List<String> phoneNumbers;
-        private String websiteUrl;
+        private List<String> phoneNumbers; // Optional
+        private String websiteUrl; // Optional
     }
 
     public static class SocialLink {
@@ -105,8 +105,8 @@ public class Portfolio {
         private String country;
         private String city;
         private String address;
-        private Double latitude;
-        private Double longitude;
+        private Double latitude; // Optional
+        private Double longitude; // Optional
     }
 }
 
